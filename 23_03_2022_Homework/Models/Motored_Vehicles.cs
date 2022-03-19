@@ -37,13 +37,12 @@ namespace _23_03_2022_Homework.Models
         }
         public void SpeedUpOrSlowDown(ref double km, int speed)
         {
-
             Console.WriteLine($"Speed: {speed}    Fuel Amount: {fuelAmount}   Remaining distance: {km}");
+             km--;
            SpeedControl: ConsoleKeyInfo keyInfo = Console.ReadKey();
             if (keyInfo.Key == ConsoleKey.UpArrow)
             {
                 this.speed += 5;
-                km--;
             }
             else if (keyInfo.Key == ConsoleKey.DownArrow)
             {
@@ -52,7 +51,6 @@ namespace _23_03_2022_Homework.Models
                 {
                     Console.WriteLine("You can't get any slower. Your car has stopped"); this.speed = 0; goto SpeedControl;
                 }
-                km--;
             }    
         }
         public void GetInfo()

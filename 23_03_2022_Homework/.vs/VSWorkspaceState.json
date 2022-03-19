@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Models\\Motored_Vehicles.cs",
   "PreviewInSolutionExplorer": false
 }
