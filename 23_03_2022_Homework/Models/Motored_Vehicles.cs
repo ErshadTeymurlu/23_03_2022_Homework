@@ -35,23 +35,25 @@ namespace _23_03_2022_Homework.Models
             this.model = model;
             this.productionYear = productionYear;
         }
-        public void SpeedUpOrSlowDown(ref double km, int speed)
+        public void SpeedUpOrSlowDown(ref double km, int speed, ref int fuelAmount)
         {
+        
             Console.WriteLine($"Speed: {speed}    Fuel Amount: {fuelAmount}   Remaining distance: {km}");
-             km--;
-           SpeedControl: ConsoleKeyInfo keyInfo = Console.ReadKey();
+            km--;
+            fuelAmount = (int)(fuelAmount - fuelUsedPerKm);
+            SpeedControl: ConsoleKeyInfo keyInfo = Console.ReadKey();
             if (keyInfo.Key == ConsoleKey.UpArrow)
             {
                 this.speed += 5;
             }
             else if (keyInfo.Key == ConsoleKey.DownArrow)
             {
-                this.speed = this.speed - 5;
+                this.speed -= 5;
                 if (speed <= 0)
                 {
                     Console.WriteLine("You can't get any slower. Your car has stopped"); this.speed = 0; goto SpeedControl;
                 }
-            }    
+            }
         }
         public void GetInfo()
         {
@@ -64,21 +66,23 @@ namespace _23_03_2022_Homework.Models
                         interiorColor = "Black";
                         exteriorColor = "Black";
                         fuelCapacity = 70;
-                        fuelUsedPerKm = 9.8 / 100;
+                        fuelUsedPerKm = 14.1 / 100;
                         passangerCapacity = "4";
-                        techFeatures = new List<string> { "Leather Seats", "Navigation System", "Front Seat Heaters", "Heated Steering Wheel",
-                        "Sunroof","Memory Seat(s)","Air Conditioning","AM/FM Stereo", "Cruise Control"};
+                        techFeatures = new List<string> {"Leather Seats", "Navigation System", "Front Seat Heaters", "Heated Steering Wheel"
+                        ,"AM/FM Stereo"};
+                        Console.WriteLine("Make: " + make);
+                        Console.WriteLine("Model: " + model);
+                        Console.WriteLine("Exterior Color: " + exteriorColor);
+                        Console.WriteLine("Interior Color: " + interiorColor);
+                        Console.WriteLine("Passenger Capacity: " + passangerCapacity);
+                        Console.WriteLine("Fuel Capacity: " + fuelCapacity);
+                        Console.WriteLine("Fuel Used Per km: " + fuelUsedPerKm);
+                        Console.Write("Technalogy features: ");
+                        foreach (string item in techFeatures) Console.Write($"{item} ");
+                        Console.WriteLine();
                     }
                 }
-                Console.WriteLine("Make: " + make);
-                Console.WriteLine("Model: " + model);
-                Console.WriteLine("Exterior Color: " + exteriorColor);
-                Console.WriteLine("Interior Color: " + interiorColor);
-                Console.WriteLine("Passenger Capacity: " + passangerCapacity);
-                Console.WriteLine("Fuel Capacity: " + fuelCapacity);
-                Console.WriteLine("Fuel Used Per km: " + fuelUsedPerKm);
-                Console.Write("Technalogy features: ");
-                foreach (string item in techFeatures) Console.Write($"{item} ");
+               
             }
         }
 

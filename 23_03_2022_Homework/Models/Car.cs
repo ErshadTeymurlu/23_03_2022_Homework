@@ -9,13 +9,14 @@ namespace _23_03_2022_Homework.Models
     internal class Car : Motored_Vehicles
     {
         public bool isOn;
-        public Car(string model, string make , string year) : base(model, make, year)
+        public Car(string make, string model, string year) : base(make, model, year)
         {
 
         }
         public void TurnOn()
         {
             isOn = true;
+            Console.Clear();
         }
         public void TurnOff()
         {
@@ -25,12 +26,13 @@ namespace _23_03_2022_Homework.Models
         {
             this.desiredDistance = km;
             this.speed = 0;
+            this.fuelAmount = 50;
             if (isOn == false) return;
             else
             {
                 while(desiredDistance >= 0)
                 {
-                    SpeedUpOrSlowDown(ref desiredDistance, speed);
+                    SpeedUpOrSlowDown(ref desiredDistance, speed, ref fuelAmount);
                 }
             }
         }
