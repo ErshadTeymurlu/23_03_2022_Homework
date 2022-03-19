@@ -6,3 +6,11 @@ C:\Users\HP\Desktop\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.csproj.Sug
 C:\Users\HP\Desktop\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.exe
 C:\Users\HP\Desktop\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.pdb
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\bin\Debug\23_03_2022_Homework.exe.config
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\bin\Debug\23_03_2022_Homework.exe
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\bin\Debug\23_03_2022_Homework.pdb
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.exe
+C:\Users\HP\Desktop\MotoredVehicles\23_03_2022_Homework\obj\Debug\23_03_2022_Homework.pdb

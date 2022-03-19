@@ -15,13 +15,13 @@ namespace _23_03_2022_Homework.Models
         }
         public void TurnOn()
         {
-
+            isOn = true;
         }
         public void TurnOff()
         {
-
+           isOn = false;
         }
-        public void Go()
+        public void Go(int km)
         {
 
         }

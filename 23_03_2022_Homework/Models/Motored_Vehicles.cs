@@ -14,27 +14,55 @@ namespace _23_03_2022_Homework.Models
         public string motorSize;
         public string fuelTankSize;
         public string fuelAmount;
-        public string fuelUsedPerKm;
-        public string color;
+        public int fuelUsedPerKm;
+        public string interiorColor;
+        public string exteriorColor;
         public string transmission;
         public string horsePower;
-        public string passangerCount;
+        public string passangerCapacity;
+        public List<string> techFeatures;
         public Motored_Vehicles()
         {
 
         }
-        public Motored_Vehicles(string model, string make, string productionYear)
+        public Motored_Vehicles(string make, string model, string productionYear)
         {
-            this.model = model;
             this.make = make;
+            this.model = model;
             this.productionYear = productionYear;
         }
         public void GetInfo()
         {
-
+            if(make == "BMW")
+            {
+                if(productionYear == "2021")
+                {
+                    if(model == "M4 COMPETITION")
+                    {
+                        interiorColor = "Black";
+                        exteriorColor = "Black";
+                        passangerCapacity = "4";
+                        transmission = "Automatic";
+                        techFeatures = new List<string>{"Leather Seats","Navigation System","Front Seat Heaters","Heated Steering Wheel" 
+                        "Sunroof","Memory Seat(s)","Air Conditioning","AM/FM Stereo", "Cruise Control"};
+                    }
+                }
+            }
         }
+   
         public virtual void GetDetailedInfo()
         {
+            if(make == "BMW")
+            {
+                if(productionYear == "2021")
+                {
+                    if(model == "M4 COMPETITION")
+                    {
+                        motorSize = "3.0";
+                        
+                    }
+                }
+            }
 
         }
     }
