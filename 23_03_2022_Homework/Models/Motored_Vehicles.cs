@@ -13,11 +13,9 @@ namespace _23_03_2022_Homework.Models
         public string productionYear;
         public string motorSize;
         public string fuelTankSize;
-        public string fuelAmount;
-        public string fuelUsedPerKm;
+        public double fuelAmount;
+        public double fuelUsedPerKm;
         public string color;
-        public string transmission;
-        public string horsePower;
         public string passangerCount;
         public Motored_Vehicles()
         {
@@ -33,9 +31,9 @@ namespace _23_03_2022_Homework.Models
         {
 
         }
-        public virtual void GetDetailedInfo()
+        public virtual double GetDetailedInfo()
         {
-
+            return fuelAmount;
         }
     }
 }
