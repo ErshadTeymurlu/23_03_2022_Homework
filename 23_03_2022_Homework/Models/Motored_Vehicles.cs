@@ -13,23 +13,28 @@ namespace _23_03_2022_Homework.Models
         public string productionYear;
         public string motorSize;
         public string fuelTankSize;
-        public double fuelAmount;
-        public double fuelUsedPerKm;
+        public double fuelAmount = 0;
+        public double fuelUsedPer100Km;
         public string color;
-        public string passangerCount;
+        public string passangerCount = "4";
         public Motored_Vehicles()
         {
 
         }
-        public Motored_Vehicles(string model, string make, string productionYear)
+        public Motored_Vehicles(string model, string make, string productionYear, double fuelUsedPer100Km)
         {
             this.model = model;
             this.make = make;
             this.productionYear = productionYear;
+            this.fuelUsedPer100Km = fuelUsedPer100Km;
         }
         public void GetInfo()
         {
-
+            Console.WriteLine("Make: " + make);
+            Console.WriteLine("Model: " + model);
+            Console.WriteLine("Production year: " + productionYear);
+            Console.WriteLine("Fuel consuption: " + fuelUsedPer100Km);
+            Console.WriteLine("Passenger count: " + passangerCount);
         }
         public virtual double GetDetailedInfo()
         {
