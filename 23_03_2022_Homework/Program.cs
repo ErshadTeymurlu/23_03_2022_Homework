@@ -22,13 +22,13 @@ namespace _23_03_2022_Homework
             }
             Continue: Console.Write("\ndo yo wanna add fuel? : ");
             string YesOrNo = Console.ReadLine();
-            if (YesOrNo == "yes")
+            if (YesOrNo == "yes" || YesOrNo == "Yes")
             {
                 Console.Write("How much do yo want to add? : ");
                 int amountOfFuel = Convert.ToInt32(Console.ReadLine());
                 cr1.fuelAmount = cr1.fuelAmount + amountOfFuel;
             }
-            else if (YesOrNo == "no")
+            else if (YesOrNo == "no" || YesOrNo == "No")
             {
                 Console.WriteLine($"You have {cr1.GetDetailedInfo()} fuel currently");
                 if(cr1.fuelAmount == 0)
